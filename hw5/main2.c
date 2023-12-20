@@ -2,10 +2,10 @@
 
 int main()
 {
-    int a=1;
+    int a=10000;
     float pi=400000.0f;
     int i=1;
-    while(a<500000){
+    for(float j=1; j<a; j++){
         if(i%2){
             pi-=(400000/((2*i)+1));
         }
@@ -13,9 +13,6 @@ int main()
             pi+=(400000/((2*i)+1));
         }
         i++;
-        if(pi=314159){
-            break;
-        }
     }
     printf("%.5f",pi/100000);
 
